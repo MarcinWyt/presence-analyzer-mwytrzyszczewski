@@ -45,6 +45,7 @@ def mean_time_weekday_view(user_id):
         log.debug('User %s not found!', user_id)
         abort(404)
 
+    #import ipdb; ipdb.set_trace()
     weekdays = group_by_weekday(data[user_id])
     result = [
         (calendar.day_abbr[weekday], mean(intervals))

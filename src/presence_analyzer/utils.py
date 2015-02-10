@@ -75,6 +75,7 @@ def group_by_weekday(items):
     """
     Groups presence entries by weekday.
     """
+    #import ipdb; ipdb.set_trace()
     result = [[], [], [], [], [], [], []]  # one list for every day in week
     for date in items:
         start = items[date]['start']
